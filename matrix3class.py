@@ -25,9 +25,9 @@ def print_matrix(matrixs):
 
 
 matrix1 = [[1,5,10],[2,7,11],[12,3,7]]
-matrix2 = [[2,4,6],[15,3,2],[4,8,1]]
+matrix2 = [[2,5,3],[5,7,4],[1,9,7]]
 
-matrix_result = [[2,4,6],[15,3,2],[4,8,1]]
+matrix_result = [[0,0,0],[0,0,0],[0,0,0]]
 
 def add_matrix(matrix_a, matrix_b):
     
@@ -38,13 +38,35 @@ def add_matrix(matrix_a, matrix_b):
             
     
             
-print_matrix(matrix1)
-print_matrix(matrix2)
+#print_matrix(matrix1)
+#print_matrix(matrix2)
 add_matrix(matrix1,matrix2)
 
 print_matrix(matrix_result)
 
 #2 - subtract_matrix: subtract any 2 matrices
+print()  
+matrix_subt_1 = [[1,5,10],[2,7,11],[12,3,7]]
+matrix_subt_2 = [[2,5,3],[5,7,4],[1,9,7]]
+def subtract_matrix(matrix_a, matrix_b):
+    for i in range(3):
+        for j in range(3):
+            print(matrix_subt_1[i][j] - matrix_subt_2[i][j], end="\t")
+        print()
 
-    
+subtract_matrix(matrix_subt_1,matrix_subt_2)
+
+
+#3 - multiply_matrix: multiply any 2 matrices
+print()
+matrix_mult1 = [[1,5,10],[2,7,11],[12,3,7]]
+matrix_mult2 = [[2,5,3],[5,7,4],[1,9,7]]
+def multiply_matrix(matrix_a, matrix_b):
+    for i in range(3):
+        for j in range(3):
+            print(matrix_mult1[i][j] * matrix_mult2[i][j], end="\t")
+        print()
+        
+multiply_matrix(matrix_mult1,matrix_mult2)
+
 

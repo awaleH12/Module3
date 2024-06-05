@@ -31,9 +31,6 @@ for numbers in my_list:
 
 print(my_list)
 
-for numbers in my_list:
-    if numbers%2 !=0:
-        my_list.remove(numbers)
 
 
-print(my_list)
+
